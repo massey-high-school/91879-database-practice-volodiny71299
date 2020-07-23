@@ -10,13 +10,13 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 150px 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "banner"
-        "nav"
-        "main"
-        "footer";
+        "logo banner banner"
+        "nav nav nav"
+        "main main side"
+        "footer footer footer";
         grid-gap: 4px;
     
 }
@@ -47,9 +47,9 @@ body {
 /* Area specifics */
 
 .logo {
+    grid-area: logo;
     padding: 0;
     float: left;
-    
 }
 
 .banner {
@@ -69,6 +69,12 @@ body {
     border: solid 1px #CCC;
 }
 
+.side {
+    grid-area: side;
+    background-color: #888;  /* grey */
+    border: solid 1px #CCC;
+    
+}
 
 .footer {
     grid-area: footer;

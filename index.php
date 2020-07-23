@@ -23,17 +23,17 @@
     
     <div class="wrapper">
     
-
+        <a href="index.php">
+            <div class="box logo"  title="Logo - Click here to go to the Home Page">
+            <img class="img-circle" width="150" height="150" src="images/gen_logo.png" alt="generic logo" />
+            
+            </div>    <!-- / logo -->
+        </a>
         
         <div class="box banner">
             
         <!-- logo image linking to home page goes here -->
-        <a href="index.php">
-            <div class="box logo"  title="Logo - Click here to go to the Home Page">
-            <img class="img-circle" src="images/gen_logo.png" width="150" height="150" alt="generic logo" />
-            
-            </div>    <!-- / logo -->
-        </a>
+        
             
             <h1>Website Name</h1>
         </div>    <!-- / banner -->
@@ -63,6 +63,12 @@
             </p>
             
         </div>    <!-- / main -->
+        
+        <div class="side">
+        
+        <p>Test</p>
+        
+        </div>
         
 
         <div class="box footer">
