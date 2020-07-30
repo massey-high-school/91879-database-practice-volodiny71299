@@ -3,6 +3,7 @@ body {
     padding: 50px;
     color: #000;
     font-family: 'Lato', sans-serif;
+    
 }
 
 
@@ -15,9 +16,10 @@ body {
     grid-template-areas: 
         "logo banner banner"
         "nav nav nav"
-        "main main side"
+        "side main main"
         "footer footer footer";
         grid-gap: 4px;
+    
     
 }
 
@@ -31,13 +33,14 @@ body {
     /* border-radius: 10px; */
     background-color: #ddd;
     border-radius: 10px;
+    border: solid 1px #CCC; /* pale grey border */
 }
 
 /* Area colouring... */
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #888;  /* dark grey */
+    background-color: #4f8a8b;  /* turquoise */
 }
 
 /* Set font on dark areas to white */
@@ -52,7 +55,7 @@ body {
     padding: 0;
     height: 150px;
     width: 150px;
-    background-image: url(images/gen_logo.png);
+    background-image: url(images/gen_logo.png); /* logo background image */
 }
 
 .banner {
@@ -61,21 +64,20 @@ body {
 
 .nav {
     grid-area: nav;
-    background-color: #DDD;  /* silver */
+    background-color: #fbd46d;  /* silver */
     font-size: 150%;
     text-align: center;
 }
 
 .main {
     grid-area: main;
-    background-color: #EEE;  /* very pale grey */
-    border: solid 1px #CCC;
+    background-color: #eeeeee;  /* very pale grey */
+
 }
 
 .side {
     grid-area: side;
-    background-color: #888;  /* grey */
-    border: solid 1px #CCC;
+    background-color: #222831;  /* dark grey  */
     
 }
 
