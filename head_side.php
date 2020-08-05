@@ -34,12 +34,12 @@
         <!-- logo image linking to home page goes here -->
         
             
-            <h1>Website Name</h1>
+            <h1>Glizzy Gladiator</h1>
         </div>    <!-- / banner -->
 
         <!-- Navigation goes here.  Edit BOTH the file name and the link name -->
         <div class="box nav">
-            <a href="index.html">Home</a> | 
+            <a href="index.php">Home</a> | 
             <a href="page1.html">Page 1</a> | 
             <a href="page2.html">Page 2</a> | 
             <a href="page3.html">Page 3</a> | 
@@ -48,7 +48,7 @@
 
         <div class="box side">
         
-            <h1>Side Bar</h1>
+            <h2>Search | <a class="side" href="showall.php">Show all</a></h2>
                 <p>Items go here</p>
                 <ol>
                     <li>Here</li>

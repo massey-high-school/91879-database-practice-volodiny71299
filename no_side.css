@@ -11,7 +11,7 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 150px 2fr 1fr;
+    grid-template-columns: 300px 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
         "logo banner banner"
@@ -53,8 +53,7 @@ body {
     grid-area: logo;
     padding: 0;
     height: 150px;
-    width: 150px;
-    background-image: url(gen_logo.png); /* logo background image */
+    background-image: url(images/logo_glizzy.png); /* logo background image */
 }
 
 .banner {
@@ -91,15 +90,15 @@ h1, h2, h3, h4 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* Navigation Links */
+/* Side Links */
 .nav a {font-weight: bold;}
-.nav a:link, a.side:visited {color: #AA0000;} /*dark red */
+.nav a:link, a.side:visited {color: 	#DA291C;} /*dark red */
 .nav a:hover {color: #000; text-decoration: none;} /* chocolate brown */
 
 
-/* links in page */
+/* Navigation in page */
 a {font-weight: bold;}
-a:link{color: #AA0000;} /*dark_red */
+a:link{color: #def2ec;} /*dark_red */
 a:visited{color: #111177;} /* dark blue */
 a:hover{color: #000;}    /* Black*/
 
