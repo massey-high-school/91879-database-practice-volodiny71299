@@ -1,0 +1,16 @@
+<!-- Results go here -->
+            <div class="results">
+
+                <p>Title: <span class="sub_heading">title holder</span></p>
+
+                <p>Author: <span class="sub_heading">title holder</span></p>
+
+                <p>Genre: <span class="sub_heading">title holder</span></p>
+
+                <p>Rating: <span class="sub_heading">title holder</span></p>
+
+                <p>
+                    Review placeholder
+                </p>
+            
+            </div>

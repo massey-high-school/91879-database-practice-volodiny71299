@@ -1,4 +1,4 @@
-<?php include "head_side.php";?> 
+<?php include "head_nav.php";?> 
         
         <div class="box main">
             <h2>First Page heading</h2>
