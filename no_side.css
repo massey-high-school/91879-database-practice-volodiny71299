@@ -39,7 +39,7 @@ body {
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #4f8a8b;  /* turquoise */
+    background-color: #76b0b1;  /* turquoise */
 }
 
 /* Set font on dark areas to white */
@@ -53,7 +53,8 @@ body {
     grid-area: logo;
     padding: 0;
     height: 150px;
-    background-image: url(images/logo_glizzy.png); /* logo background image */
+    width: auto;
+    background-image: url(logo_glizzy.png); /* logo background image */
 }
 
 .banner {
@@ -99,8 +100,8 @@ h1, h2, h3, h4 {
 /* Navigation in page */
 a {font-weight: bold;}
 a:link{color: #def2ec;} /*dark_red */
-a:visited{color: #111177;} /* dark blue */
-a:hover{color: #000;}    /* Black*/
+a:visited{color: #110177;} /* dark blue */
+a:hover{color: #fff;}    /* Black*/
 
 
 /* Contact Form Styling */
@@ -126,9 +127,6 @@ a:hover{color: #000;}    /* Black*/
     color: #593849; /* purple */
     font-weight: bold;
 }
-
-
-
 
 
 

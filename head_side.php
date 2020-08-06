@@ -49,11 +49,14 @@
         <div class="box side">
         
             <h2>Search | <a class="side" href="showall.php">Show all</a></h2>
-                <p>Items go here</p>
-                <ol>
-                    <li>Here</li>
-                    <li>is</li>
-                    <li>a</li>
-                    <li>list</li>
-                </ol>
+            
+            <i>Type part of the title / author name if desired</i>
+            
+            <hr />
+                
+            Title<br />
+            Author Search<br />
+            Genre Search<br />
+            Rating Search
+            
         </div> <!-- / side -->
