@@ -128,8 +128,13 @@ a:hover{color: #fff;}    /* Black*/
     font-weight: bold;
 }
 
-
-
+/* Results Box Formatting */
+.results {
+    padding: 10px;
+    background-color: ;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
 
 
 

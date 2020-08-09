@@ -13,20 +13,64 @@ $count=mysqli_num_rows($showall_query);
             
             <h2>All Items</h2>
             
+            <?php
+            
+            // check if there are any results
+            
+            if ($count<1)
+                
+            {
+                
+                ?>
+            
+            <div class="error">
+                Sorry! There are no results that match your search. Please use the search 
+            </div>
+                
+                <?php
+            
+            } // end count 'if'
+            
+            // if there are no results, output and error
+            else {
+                
+                do {
+                    
+                ?>
+            
             <!-- Results go here -->
+            <div class="results">
+
+                <p>Title: <span class="sub_heading"><?php echo $showall_rs['Title']; ?></span></p>
+
+                <p>Author: <span class="sub_heading"><?php echo $showall_rs['Author']; ?></span></p>
+
+                <p>Genre: <span class="sub_heading"><?php echo $showall_rs['Genre']; ?></span></p>
+
+                <p>Rating: <span class="sub_heading"><?php echo $showall_rs['Rating']; ?></span></p>
+
+                <p>
+                    Review placeholder
+                </p>
             
-            <p>Title: <span class="sub_heading">title holder</span></p>
+            </div>
             
-            <p>Author: <span class="sub_heading">title holder</span></p>
+            <hr />
             
-            <p>Genre: <span class="sub_heading">title holder</span></p>
+            <?php
             
-            <p>Rating: <span class="sub_heading">title holder</span></p>
+                } // end of 'do'
+                
+                while($showall_rs=mysqli_fetch_assoc($showall_query));
+                
+            } // end else
             
-            <p>
-                Review placeholder
-            </p>
             
+            // if there are results, display them
+            
+            
+            ?>
+                
         </div>    <!-- / main -->
         
         
