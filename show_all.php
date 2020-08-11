@@ -4,7 +4,7 @@ $showall_sql="SELECT *
 FROM `2020_L1_prac_reviews`
 ORDER BY `2020_L1_prac_reviews`.`Title` ASC";
 $showall_query=mysqli_query($dbconnect, $showall_sql);
-$showall_rs=mysqli_fetch_assoc($showall, query);
+$showall_rs=mysqli_fetch_assoc($showall_query);
 $count=mysqli_num_rows($showall_query);
 
 ?> 
