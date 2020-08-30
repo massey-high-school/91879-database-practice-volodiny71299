@@ -6,6 +6,7 @@
     
         session_start();
         include("config.php");
+        include("functions.php"); // include data sanitising...
         
         // Connect to database...
     
@@ -26,7 +27,7 @@
     <meta name="author" content="Put your name here">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Website Title goes here</title>
+    <title>Book Review</title>
     
     <!-- Edit the link below / replace with your chosen google font -->
     <link href="https://fonts.googleapis.com/css?family=Lato%7cUbuntu" rel="stylesheet"> 
@@ -51,7 +52,7 @@
         <!-- logo image linking to home page goes here -->
         
             
-            <h1>Glizzy Gladiator</h1>
+            <h1>Book Review</h1>
         </div>    <!-- / banner -->
 
         <!-- Navigation goes here.  Edit BOTH the file name and the link name -->
@@ -61,4 +62,4 @@
             <a href="page2.html">Page 2</a> | 
             <a href="page3.html">Page 3</a> | 
             <a href="contact.html">Contact</a>
-        </div>    <!-- / nav -->        
+        </div>    <!-- / nav -->

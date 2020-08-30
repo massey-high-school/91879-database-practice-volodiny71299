@@ -1,8 +1,31 @@
 <?php include "head_nav.php";
 
-$showall_sql="SELECT *
-FROM `2020_L1_prac_reviews`
-ORDER BY `2020_L1_prac_reviews`.`Title` ASC";
+
+// if find button pushed...
+if(isset($_POST['find_rating']))
+    
+{
+    
+// Retrieves genre and sanitises it.
+$amount=test_input(mysqli_real_escape_string($dbconnect,$_POST['amount']));
+$stars=test_input(mysqli_real_escape_string($dbconnect,$_POST['stars']));
+    
+if ($amount=="exactly")
+    
+{
+    $showall_sql="SELECT * FROM `2020_L1_prac_reviews` WHERE 'Rating' = $stars ORDER BY 'Title' ASC";
+}
+    
+elseif ($amount=="less")
+    
+{
+    $showall_sql="SELECT * FROM `2020_L1_prac_reviews` WHERE 'Rating' <= $stars ORDER BY 'Title' ASC";
+}
+    
+else {
+    $showall_sql="SELECT * FROM `2020_L1_prac_reviews` WHERE 'Rating' >= $stars ORDER BY 'Title' ASC";
+}
+    
 $showall_query=mysqli_query($dbconnect, $showall_sql);
 $showall_rs=mysqli_fetch_assoc($showall_query);
 $count=mysqli_num_rows($showall_query);
@@ -11,7 +34,7 @@ $count=mysqli_num_rows($showall_query);
         
         <div class="box main">
             
-            <h2>All Items</h2>
+            <h2>Rating Search</h2>
             
             <?php
             
@@ -69,6 +92,8 @@ $count=mysqli_num_rows($showall_query);
             
             // if there are results, display them
             
+    
+            } // end isset
             
             ?>
                 

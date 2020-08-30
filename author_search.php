@@ -1,8 +1,14 @@
 <?php include "head_nav.php";
 
-$showall_sql="SELECT *
-FROM `2020_L1_prac_reviews`
-ORDER BY `2020_L1_prac_reviews`.`Title` ASC";
+
+// if find button pushed...
+if(isset($_POST['find_author']))
+    
+{
+// Retrieves author and sanitises it.
+$author=test_input(mysqli_real_escape_string($dbconnect,$_POST['author']));
+
+$showall_sql="SELECT * FROM `2020_L1_prac_reviews` WHERE `Author` LIKE '%$author%' ORDER BY 'Author' ASC ";
 $showall_query=mysqli_query($dbconnect, $showall_sql);
 $showall_rs=mysqli_fetch_assoc($showall_query);
 $count=mysqli_num_rows($showall_query);
@@ -11,7 +17,7 @@ $count=mysqli_num_rows($showall_query);
         
         <div class="box main">
             
-            <h2>All Items</h2>
+            <h2>Author Search</h2>
             
             <?php
             
@@ -69,6 +75,8 @@ $count=mysqli_num_rows($showall_query);
             
             // if there are results, display them
             
+    
+            } // end isset
             
             ?>
                 
